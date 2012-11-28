@@ -1,0 +1,6 @@
+{
+  "api_key": "YOUR_DARKSKY_API_KEY",
+  "lat": 45.5165,
+  "lng": -122.6764,
+  "channel": "#your-channel"
+}
