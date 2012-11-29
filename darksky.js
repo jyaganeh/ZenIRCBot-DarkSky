@@ -24,13 +24,14 @@ function check() {
     if (lastPrecipitating != forecast.isPrecipitating) {
       lastPrecipitating = forecast.isPrecipitating;
 
-      var msg = "[Dark Sky] " + forecast.currentTemp + "° F."
-              + " " + capitalize(forecast.currentSummary);
+      var msg = "[Forecast] " + capitalize(forecast.currentSummary);
 
       // if Dark Sky provides it, add the minutes until change to the message
       if (forecast.minutesUntilChange > 0) {
         msg += " for the next " + forecast.minutesUntilChange + " minutes.";
       }
+      
+      msg += " (Currently " + forecast.currentTemp + "°F)"
 
       zen.send_privmsg(config.channel, msg);
     }
