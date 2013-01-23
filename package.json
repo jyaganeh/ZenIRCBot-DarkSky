@@ -1,0 +1,18 @@
+{
+    "author": "Aaron Parecki (http://aaronparecki.com) and Josh Yaganeh (https://twitter.com/hsoj)",
+    "name": "darksky",
+    "description": "Darksky weather service for ZenIRCBot",
+    "version": "0.0.9",
+    "homepage": "https://github.com/aaronpk/ZenIRCBot-DarkSky",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aaronpk/ZenIRCBot-DarkSky.git"
+    },
+    "dependencies": {"darksky": "*",
+                     "redis": "*",
+                     "request": "*",
+                     "zenircbot-api": "~2"},
+    "engines": {
+        "node": "*"
+    }
+}
